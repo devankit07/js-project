@@ -7,28 +7,70 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+  font-family: "Poppins", sans-serif;
 }
 
+/* Counter Box */
 .box {
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.6666666667);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  margin: 50px auto;
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  transition: 0.3s;
 }
 
-.incr, .decr, .rese, .paus {
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 16px;
+/* Button Styles */
+button {
+  padding: 12px 25px;
+  margin: 7px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+  color: white;
+}
+
+/* Individual colors */
+.incr {
+  background: #4caf50;
+}
+
+.decr {
+  background: #f44336;
+}
+
+.rese {
+  background: #2196f3;
+}
+
+.paus {
+  background: #9c27b0;
+}
+
+.sta {
+  background: #ff9800;
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
 }/*# sourceMappingURL=style.css.map */
