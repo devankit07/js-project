@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.like-card {
+  position: relative;
+  width: 360px;
+  height: 520px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/*profile section*/
+
+.profile {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border: 3px solid #ff6b81;
+}
+
+.profile h3 {
+  position: absolute;
+  left: 70px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*post section*/
+
+.post {
+  position: absolute;
+  top: 80px;
+  width: 90%;
+  height: 70%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post i {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  font-size: 65px;
+  cursor: pointer;
+  opacity: 0;
+
+  background-image: url("https://imgs.search.brave.com/fctJgCfeLNx5Ttinx46wKc7Xk5EAwtY585aHESB3w5M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTUvSW5z/dGFncmFtLUxpa2Ut/UE5HLUZyZWUtSW1h/Z2UucG5n");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transform: translate(-50%, -50%) scale(0) rotate(-50deg);
+  transition: all cubic-bezier(0.41, 0.79, 0.84, 1.47) 0.3s;
+}
+
+/*actions section*/
+
+.actions {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.actions i {
+  font-size: 26px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s ease;
+}
+
+button {
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #ff6b81;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4757;
+}
+button:active {
+  scale: 0.98;
+}
