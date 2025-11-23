@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  height: 420px;
+  width: 330px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(0.98);
+}
+
+/* STORY BAR */
+#storiyan {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 18px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+#storiyan::-webkit-scrollbar {
+  display: none;
+}
+
+/* STORY CIRCLES */
+.story {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #ff4e57;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.story:hover {
+  transform: scale(1.12);
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* FULL SCREEN STORY VIEW */
+#full-screen {
+  position: absolute;
+  inset: 0;
+  display: none;
+  background-position: center;
+  background-size: cover;
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    scale: 1.1;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
