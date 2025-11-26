@@ -50,7 +50,7 @@ section {
   gap: var(--space-lg);
 }
 
-/* TOP INFO BAR */
+
 .infos {
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ section {
   font-size: 15px;
 }
 
-/* BOARD */
+
 .board {
   flex-grow: 1;
   background: var(--panel);
@@ -80,19 +80,19 @@ section {
   position: relative;
 }
 
-/* GRID BLOCKS */
+
 .block {
   border: 1px solid #1b1b1b;
 }
 
-/* SNAKE */
+
 .fill {
   background: var(--snake);
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
-/* FOOD */
+
 .food {
   background: var(--food);
   border-radius: 10px;
