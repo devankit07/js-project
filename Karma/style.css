@@ -1,0 +1,238 @@
+:root {
+  --pri: #f0f4ef;
+  --sec: #0b2f2f;
+  --tri: #082525;
+  --tri1: #0f4e4e;
+  --tri3: #0f4137;
+  --tri4: #1f8c76;
+  --tri5: #27ae60;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--sec);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--tri);
+  color: var(--pri);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+section.allelem {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 150px 40px 40px;
+  background-color: var(--tri1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.elem {
+  position: relative;
+  height: 380px;
+  width: 270px;
+  font-size: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background-color: var(--tri2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.elem:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.elem:active {
+  transform: scale(0.95);
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.elem h2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 28px;
+  color: var(--pri);
+  text-decoration: underline;
+}
+
+.pomodoro {
+  color: var(--pri);
+}
+
+.fullelem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--tri3);
+  font-size: 40px;
+  display: none;
+  color: var(--pri);
+  z-index: 10;
+}
+
+.back {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  background-color: rgb(208, 42, 42);
+  color: var(--tri2);
+  border-radius: 50%;
+  padding: 10px 11px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back:hover {
+  background-color: rgb(156, 39, 39);
+}
+
+.back:active {
+  transform: scale(0.92);
+}
+
+.To-do-list-fullpage {
+  display: block;
+}
+
+.To-do-list-fullpage h2 {
+  font-size: 55px;
+}
+.To-do-list-fullpage .to-do-container {
+  height: 75%;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.To-do-list-fullpage .to-do-container .addtask {
+  height: 100%;
+  width: 35%;
+  background-color: var(--tri4);
+  border-radius: 5px;
+}
+
+.To-do-list-fullpage .to-do-container .addtask form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.To-do-list-fullpage .to-do-container .addtask form input,
+.To-do-list-fullpage .to-do-container .addtask form textarea {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.To-do-list-fullpage .to-do-container .addtask form button {
+  padding: 10px 15px;
+  background-color: var(--tri5);
+  color: var(--pri);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+.To-do-list-fullpage .to-do-container .addtask form button:hover {
+  background-color: var(--tri1);
+  scale: 0.95;
+}
+
+
+
+.To-do-list-fullpage .to-do-container .alltask {
+  height: 100%;
+  width: 60%;
+  background-color: var(--tri4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--tri3);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.task h4 {
+  font-size: 20px;
+  color: var(--pri);
+}
+
+
+.task button {
+  padding: 8px 12px;
+  background-color: rgb(208, 42, 42);
+  color: var(--pri);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.task button:hover {
+  background-color: rgb(156, 39, 39);
+  scale: 0.95;
+}
